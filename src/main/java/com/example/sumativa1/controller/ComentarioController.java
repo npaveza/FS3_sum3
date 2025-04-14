@@ -36,4 +36,9 @@ public class ComentarioController {
     public void banearComentario(@PathVariable Long id, @RequestBody Usuario usuario) {
         comentarioService.banearComentario(id, usuario);
     }
+
+    @GetMapping
+    public List<Comentario> obtenerTodosLosComentarios() {
+        return comentarioService.obtenerTodosLosComentarios();
+    }
 }

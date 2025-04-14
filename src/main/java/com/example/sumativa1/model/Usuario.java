@@ -20,6 +20,8 @@ public class Usuario {
 
     private String rol; // "USER" o "ADMIN"
 
+    private String contrasena;
+
     // Getters y setters
     public Long getId() {
         return id;
@@ -59,5 +61,13 @@ public class Usuario {
 
     public void setRol(String rol) {
         this.rol = rol;
+    }
+    
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 }
