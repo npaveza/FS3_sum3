@@ -8,6 +8,8 @@ services:
     container_name: backend_app
     ports:
       - "8080:8080"
+    volumes:
+      - ./Wallet_fullstack3:/app/Wallet_fullstack3
     networks:
       - redapp
 
